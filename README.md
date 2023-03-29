@@ -13,4 +13,5 @@ A boilerplate of NodeJS with express, eslint,  prettier, jest...
 - [Typescript](https://www.typescriptlang.org/)
 - [git-commit-msg-linter](https://www.npmjs.com/package/git-commit-msg-linter)
 - [ts-node-dev](https://www.npmjs.com/package/ts-node-dev)
+- [eslint-config-standard-with-typescript](https://www.npmjs.com/package/eslint-config-standard-with-typescript)
 
