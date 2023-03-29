@@ -1,5 +1,7 @@
-node_modules
-dist
-coverage
+/node_modules
+/dist
+/coverage
 .env
 yarn-error.log
+
+node_modules/.yarn-integrity

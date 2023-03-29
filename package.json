@@ -4,8 +4,20 @@
   },
   "version": "0.0.1",
   "description": "Boilerplate NodeJS",
+  "scripts": {
+    "start": "TZ=UTC node dist/main",
+    "dev": "TZ=UTC NODE_ENV=development ts-node-dev --respawn --transpile-only --exit-child --inspect=0.0.0.0:9229 src/main",
+    "build": "rimraf dist && tsc -p tsconfig-build.json"
+  },
   "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^18.15.11",
     "git-commit-msg-linter": "^4.9.2",
+    "rimraf": "^4.4.1",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
   }
 }
