@@ -1,4 +1,9 @@
 {
+  "engines": {
+    "node": "^16.x"
+  },
+  "version": "0.0.1",
+  "description": "Boilerplate NodeJS",
   "devDependencies": {
     "git-commit-msg-linter": "^4.9.2",
     "typescript": "^5.0.2"
