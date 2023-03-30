@@ -29,5 +29,6 @@ A boilerplate for Node.js with typescript, eslint, jest, module-alias...
  yarn && yarn dev # to install dependencies and start development server
  yarn build && yarn start # to compiles TypeScript code into plain JavaScript and start production server
  yarn test # to test your code
+ yarn check-update # to check if there is any library outdated
 ```
 
