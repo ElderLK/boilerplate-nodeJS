@@ -9,9 +9,17 @@
     "dev": "TZ=UTC NODE_ENV=development ts-node-dev --respawn --transpile-only --exit-child --inspect=0.0.0.0:9229 src/main",
     "build": "rimraf dist && tsc -p tsconfig-build.json",
     "lint": "eslint .",
-    "lint:fix": "yarn lint -- --fix"
+    "lint:fix": "yarn lint -- --fix",
+    "test": "TZ=UTC jest --passWithNoTests --no-cache --runInBand",
+    "test:clear": "jest --clearCache",
+    "test:watch": "yarn test --watch",
+    "test:staged": "yarn test --findRelatedTests",
+    "test:coverage": "yarn test --coverage"
   },
   "devDependencies": {
+    "jest": "^29.5.0",
+    "ts-jest": "^29.0.5",
+    "@types/jest": "^29.5.0",
     "@types/module-alias": "^2.0.1",
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
